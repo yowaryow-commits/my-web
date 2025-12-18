@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+/* HEADER background gradasi warna merah gelap.*/
+.hero {
+  background: linear-gradient(120deg, #7b1e1e, #b83232);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+/*Mengatur ukuran judul agar besar & menonjol.*/
+.hero h1 {
+  font-size: 2.5rem;
+}
+/*Jarak atas paragraf dan ukuran teks deskripsi.*/
+.hero p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+/* NAVBAR garis (hitam) */
+.navbar {
+  background: #111;
+  padding: 12px;
+}
+/*navbar tombol home, author, gallery*/
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+/*Warna link putih, tanpa garis bawah, dan animasi halus.*/
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+/*Efek hover, warna berubah saat disentuh mouse. untuk tombol home, author, gallery*/
+.navbar a:hover {
+  color: #ad8989;
+}
+
+/* INTRO Menyusun gambar & teks berdampingan.*/
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #f2f2f2;
+  gap: 30px;
+}
+/*
+ Ukuran gambar,Sudut melengkung,Bayangan gambar.*/
+.intro img {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+/*Lebar teks dibatasi,Jarak antar baris agar nyaman dibaca.*/
+.intro p {
+  max-width: 500px;
+  line-height: 1.6;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+/* CONTENT GRID Grid otomatis sesuai layar,Minimal card 250px,
+Auto satu atau banyak kolom,Jarak antar card. */
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  background: #fff;
+}
+
+/* CARD Kartu putih, Sudut rounded, Bayangan neat, Flex vertikal.*/
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: 0.3s;
+  display: grid;
+  flex-direction: column;
+}
+/*Kartu naik saat hover, Bayangan makin tebal.*/
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+/*Gambar memenuhi card, Potong otomatis tanpa merusak rasio.*/
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+/*Judul merah & tengah.*/
+.card h2 {
+  text-align: center;
+  margin: 15px 0;
+  color: #7b1e1e;
+}
+/*Jarak dalam teks & rapi.*/
+.card p {
+  padding: 0 15px;
+  text-align: justify;
+  font-size: 0.95rem;
+}
+
+/* BUTTONTombol merah, Membulat, Hover halus.*/
+.btn {
+  margin: 15px;
+  text-align: center;
+  text-decoration: none;
+  background: #b83232;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+/*Warna lebih gelap saat disentuh.*/
+.btn:hover {
+  background: #7b1e1e;
+}
+
+/* FOOTER Footer hitam, teks putih, rapi.*/
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIF Di HP → konten jadi vertikal.*/
+@media (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+  }
+}
+/*Batasi lebar card.*/
+.card {
+  max-width: 280px;
+}
+/*Tinggi gambar disesuaikan.*/
+.card img {
+  height: 200px;
+}

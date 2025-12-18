@@ -1,0 +1,99 @@
+/* RESET DASAR Menghapus jarak bawaan browser, menyeragamkan ukuran elemen, 
+dan mengatur seluruh font website menjadi Segoe UI.*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* HEADER / HERO Memberikan header dengan background gradasi merah dan teks putih di tengah. */
+.hero {
+  background: linear-gradient(120deg, #7b1e1e, #b83232);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+/*Menentukan ukuran judul utama.*/
+.hero h1 {
+  font-size: 2.3rem;
+}
+
+.hero p {
+  margin-top: 8px;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #111;
+  padding: 12px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff9797;
+}
+
+/* CONTENT AREA */
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f2f2f2;
+}
+
+/* CARD HORIZONTAL */
+.card {
+  max-width: 720px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  overflow: hidden;
+  display: flex;            /* horizontal */
+  gap: 20px;
+}
+
+/* FOTO KIRI */
+.card img {
+  width: 350px;
+  height: 220px;
+}
+
+}
+
+/* TEKS KANAN */
+.card h2 {
+  margin-top: 15px;
+  color: #7b1e1e;
+}
+
+.card p {
+  margin-top: 10px;
+  line-height: 1.6;
+  text-align: justify;
+  padding-right: 15px;
+}
+
+/* TOMBOL */
+.btn {
+  display: inline-block;
+  margin: 15px 0 15px 0;
+  background: #b83232;
+  color: white;
+  padding: 8px 16px;
+  border-rad
